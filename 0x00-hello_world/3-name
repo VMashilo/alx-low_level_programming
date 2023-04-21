@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $(('echo SPATH | greo -o ":/" | wc -l'+1))
