@@ -1,23 +1,17 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * main - Prints "_putchar" followed by a new line.
- *
- * Return: Always 0.
+ * _isupper - checks if character is uppercase
+ * @c: carrier integer var
+ * Return: 0 if false, 1 if true
  */
 
-int main(void)
+int _isupper(int c)
 {
-	char putchar[] = "_putchar\n";
-	int i = 0;
-
-	while (putchar[i] != '\0')
+	if (c >= 65 && c <= 90)
 	{
-		char c = putchar[i];
-
-		_putchar(c);
-		i++;
+		return (1);
 	}
-
 	return (0);
 }
